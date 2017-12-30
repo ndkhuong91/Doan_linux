@@ -1,0 +1,182 @@
+body{
+	background-color: #b0aa85;
+}
+.toan_cuc{
+	width: 1200px;
+	margin: auto;
+	/*background-color: #F8B201;*/
+}
+.header{
+	width: 1200px;
+	background-color: red;
+	height: 150px;
+	margin: auto;
+	background-image: url("header1.PNG");
+	background-size: 100% 100%;
+}
+.menu_pub{
+	background-color:green;
+	width: 100%;
+}
+.menu{
+	margin: auto;
+	width: 1200px;
+	height: 50px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+.section-title h2{
+	font-size: 21px;
+  background-image: url(title.png);
+  background-repeat: no-repeat;
+padding-bottom: 15px;
+background-position-x: center;
+background-position-y: bottom;
+margin-top: 0;
+}
+.menu ul li{
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+
+}
+.menu ul li a{
+	color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu ul li:hover{
+   background-color: #B3B3B3;
+   margin-top: -20px;
+}
+
+
+.content{
+	width: 1200px;
+	margin: auto;
+}
+.main_content{
+	width: 70%;
+	float: left;
+}
+.main_sub_content{
+	width: 100%;
+
+}
+.main_sub_content_1{
+	clear: left;
+}
+.slide_bar{
+	width: 28%;
+	float: left;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+/* những khối món ăn*/
+.sub_content{
+	width: 30%;
+	float: left;
+	border: 1px solid #ccc;
+	margin-left:10px;
+	margin-bottom:10px;
+	background-color: white;
+}
+.mon_quan{
+width:68%;
+float:left;
+}
+.sub_content img{
+	width: 100%;
+}
+
+.sub_content a img{
+	 width: 30px;
+}
+.sub_content .title{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+}
+.sub_content .dicription{
+	font-size: 15px;
+	width: 90%;
+  padding: 0px 10px 10px 10px;
+  text-align: justify;
+}
+.wpb_wrapper{
+	clear: left;
+}
+.search {
+	list-style: none;
+}
+.search li {
+	display:inline-block;
+}
+.text{
+	height: 25px;
+	width: 280px;
+}
+.tu,.den{
+	height: 25px;
+	width: 70px;
+	margin-right: 10px;
+}
+
+button{
+	width: 200px;
+	height: 30px;
+    color: black;
+    border-radius: 5px;
+    
+}
+.sub_content:hover{
+border-radius: 10px;
+-webkit-transform: scale(1.5);
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 500ms;
+}
+.footer{
+	clear: left;
+	height: 100px;
+	width: 100%;
+	margin: auto;
+	background-color: green;
+}
+label{
+	padding: 0px;
+}
+.tim{
+	width: 100%;
+	height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	background-color:#2B7400;
+}
+
+.table_quan {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 1200px;
+}
+
+.table_quan td, .table_quan th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table_quan tr:nth-child(even){background-color: #f2f2f2;}
+
+.table_quan tr:hover {background-color: #ddd;}
+
+.table_quan th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Tìm món ăn </title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showLocation);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+});
+ 
+function showLocation(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    alert(longitude);
+    $.ajax({
+        type:'POST',
+        url:'http://125.234.104.228:90/thucpham/index.php',
+        data:'latitude='+latitude+'&longitude='+longitude,
+        success:function(msg){
+            if(msg){
+               $("#location").html(msg);
+            }else{
+                $("#location").html('Not Available');
+            }
+        }
+    });
+}
+</script>
+</head>
+<body >
+<div class="header">
+  	<p>Your Location: <span id="location"></span></p>
+  </div>
+  <div class = "menu_pub">
+	  <div class="menu">
+		<ul>
+			<li> <a href="#">Trang chủ</a></li>
+			<li><a href="#">Địa điểm</a></li>
+			<li ><a href="#">Địa điểm gần bạn</a></li>
+			<li><a href="#">Tìm kiếm</a></li>
+		</ul>
+	  </div>
+  </div>
+ <div class="toan_cuc">
+  <div class="slide_full">
+     <img src="header.png" width="100%" />
+  </div>
+  <div class="content">
+  	<div class="main_content">
+  		<div class="wpb_wrapper">
+			<div class="section-title">
+				<center>
+					<h2>Món ăn được chọn nhiều nhất</h2>
+				</center>
+			</div>
+		</div>
+		<!--  Món 1 -->
+		<div class="main_sub_content_1">
+		  		
+		  	
+		  		<div class="sub_content"><div class="image"><img src="1.PNG"></div><div class="title">
+		  				Tieu de		  			
+				</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		 </div>
+
+		 <!-- phần 2-->
+
+		 <div class="wpb_wrapper">
+			<div class="section-title">
+				<center>
+					<h2>Đặc sản vùng miền</h2>
+				</center>
+			</div>
+		</div>
+		<!--  Món 1 -->
+		<div class="main_sub_content">
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		  		<!--  Món 1 -->
+		  		<div class="sub_content">
+		  			<div class="image">
+		  				<img src="1.PNG">
+		  			</div>
+		  			<div class="title">
+		  				Tiều đề
+		  			</div>
+		  			<div class="dicription">
+		  				<p> Đây là phần giới thiệu ngắn về món ăn
+		  				Đây là phần giới thiệu ngắn về món ăn
+		  			Đây là phần giới thiệu ngắn về món ăn</p>
+		  			</div>
+		  		</div>
+		 </div>
+  	</div>
+  	<div class="slide_bar">
+  		<div class="tim"><center>Tìm kiếm</center></div>
+  		<div>
+  			
+  			<ul class="search">
+  				<li><input type="checkbox" name="check_dd"></li>
+  				<li><label><center>Địa chỉ</center></label></li>
+  				
+  				<li><input class="text" type="text" width="300px" name="text_dc"></li>
+  			</ul>
+  			
+  			<ul class="search">
+  				<li><input type="checkbox" name="check_dd"></li>
+  				<li><label><center>Món</center></label></li>
+  				
+  				<li><input class="text" type="text" width="300px" name="text_dc"></li>
+  			</ul>
+  			
+  			<ul class="search">
+  				<li><input type="checkbox" name="check_dd"></li>
+  				<li><label><center>Loại Món (Chay, mặn)</center></label></li>
+  				
+  				<li><input class="text" type="text" width="300px" name="text_dc"></li>
+  			</ul>
+  			
+  			<ul class="search">
+  				<li><input type="checkbox" name="check_dd"></li>
+  				<li><label><center>Giá</center></label></li>
+  				
+  				<li><label>Từ </label><input class="tu" type="text" name="text_dc"></li>
+  				<li><label>đến </label><input class="den" type="text" name="text_dc"></li>
+  			</ul>
+			<ul class="search">
+  				<li><input type="checkbox" name="check_dd"></li>
+  				<li><label><center>Giờ</center></label></li>
+  				
+  				<li><label>Từ </label><input class="tu" type="text" name="text_dc"></li>
+  				<li><label>đến </label><input class="den" type="text" name="text_dc"></li>
+  			</ul>
+  			<center><button>Tìm</button></center>
+  			
+  		</div>
+  		<div id="map">
+  			<iframe src ="" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  		</div>
+  	</div>
+
+  </div>
+ 
+  </div>
+     <div class="footer">
+  	
+  </div>
+
+</body>
+</html>
